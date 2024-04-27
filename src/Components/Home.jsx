@@ -77,9 +77,9 @@ const Home = () => {
 
 
         <div className='bg-white lg:p-20 py-16 px-5'>
-            <div className='bg-rose-50 w-fit flex  rounded-full justify-center m-auto items-center gap-5 py-3 px-7'>
-                <button onClick={handleActiveOne} className={`${isActive1 ? 'bg-blue-800 text-white'  : 'bg-rose-50 text-black' } py-3 px-5 rounded-full `}>For Applicants</button>
-                <button onClick={handleActiveTwo} className={`${isActive2 ? 'bg-blue-800 text-white'  : 'bg-rose-50 text-black' } py-3 px-5 rounded-full `}>For Institutions</button>
+            <div className='bg-rose-50 w-fit flex  rounded-full justify-center m-auto items-center gap-5 lg:py-3 lg:px-7 py-2 px-5'>
+                <button onClick={handleActiveOne} className={`${isActive1 ? 'bg-blue-800 text-white'  : 'bg-rose-50 text-black' } py-3 px-5 rounded-full lg:text-sm text-xs`}>For Applicants</button>
+                <button onClick={handleActiveTwo} className={`${isActive2 ? 'bg-blue-800 text-white'  : 'bg-rose-50 text-black' } py-3 px-5 rounded-full lg:text-sm text-xs`}>For Institutions</button>
             </div>
 
 
@@ -91,30 +91,30 @@ const Home = () => {
                         <p className='py-6 lg:text-md lg:text-sm text-xs text-center'>With Tuition Aid, you can have your tuition paid for you, while you pay at your later.</p>
                     </div>
 
-                    <div className='lg:flex lg:justify-center lg:flex-row flex-col-reverse m-auto items-center w-fit mt-10 gap-5'>
-                        <div className='w-full flex flex-col gap-10'>
+                    <div className='lg:flex lg:flex-row lg:justify-center m-auto flex flex-col-reverse  items-center w-fit lg:mt-10 lg:gap-3'>
+                        <div className='w-full flex flex-col lg:gap-10 gap-5'>
                             <div>
                                 <h2 className='flex gap-3 items-center lg:text-xl'><p className='text-green-600'><IoCheckmarkDoneCircleSharp /></p>Simple Loan Application Process</h2>
-                                <p className='py-2 px-10 pr-0'>Apply hassle-free, and secure your childs <br /> education with ease.</p>
+                                <p className='py-2 px-10 pr-0 lg:text-sm text-xs'>Apply hassle-free, and secure your childs <br className='lg:block hidden'/> education with ease.</p>
                             </div>
 
                             <div>
                                 <h2 className='flex gap-3 items-center lg:text-xl'><p className='text-green-600'><IoCheckmarkDoneCircleSharp /></p>Comparison of Loan Products</h2>
-                                <p className='py-2 px-10 pr-0'>Easily compare interest rates, repayment plans. And select <br /> Plans that best aligns with your income.</p>
+                                <p className='py-2 px-10 pr-0 lg:text-sm text-xs'>Easily compare interest rates, repayment plans. And select <br className='lg:block hidden'/> Plans that best aligns with your income.</p>
                             </div>
 
                             <div>
                                 <h2 className='flex gap-3 items-center lg:text-xl'><p className='text-green-600'><IoCheckmarkDoneCircleSharp /></p>Direct Tuition Fee Payment</h2>
-                                <p className='py-2 px-10 pr-0'>Tuition fees settled directly with institutions, ensuring seamless financial <br /> transactions so you don’t have to worry.</p>
+                                <p className='py-2 px-10 pr-0 lg:text-sm text-xs'>Tuition fees settled directly with institutions, ensuring seamless financial <br className='lg:block hidden'/> transactions so you don’t have to worry.</p>
                             </div>
 
                             <div>
                                 <h2 className='flex gap-3 items-center lg:text-xl'><p className='text-green-600'><IoCheckmarkDoneCircleSharp /></p>Easy Tracking</h2>
-                                <p className='py-2 px-10 pr-0'>Stay updated on your application status, with real time updates.</p>
+                                <p className='py-2 px-10 pr-0 lg:text-sm text-xs'>Stay updated on your application status, with real time updates.</p>
                             </div>
                         </div>
 
-                        <div className='w-full ml-auto h-[35rem] overflow-hidden rounded-3xl'>
+                        <div className='w-full ml-auto lg:h-[35rem] lg:mb-0 mb-10  overflow-hidden rounded-3xl'>
                             <Image src={imageOne} alt='' className='w-full'/>
                         </div>
                     </div>
